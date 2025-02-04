@@ -1,0 +1,85 @@
+/* General Styling */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #121212; /* Dark Mode Background */
+    color: #ffffff; /* White text */
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: #262730; /* Dark Gray */
+    padding: 10px;
+}
+
+[data-testid="stSidebar"] h1, 
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3 {
+    color: #ffffff; /* White Text */
+}
+
+/* Improve responsiveness for different screen sizes */
+@media screen and (max-width: 768px) {
+    /* Adjust sidebar for mobile */
+    [data-testid="stSidebar"] {
+        width: 100%;
+        position: relative;
+        z-index: 10;
+    }
+
+    /* Reduce font size for better mobile display */
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    /* Adjust padding and margins */
+    .block-container {
+        padding: 10px !important;
+    }
+}
+
+/* Customize Buttons */
+button {
+    background-color: #ff4b4b; /* Red Button */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff7878;
+}
+
+/* Customizing Dataframe Tables */
+[data-testid="stTable"] {
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+
+/* Link Styling */
+a {
+    color: #4caf50; /* Green Links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
